@@ -1,0 +1,22 @@
+interview-clone/
+├─ backend/
+│  ├─ wrangler.toml
+│  ├─ package.json
+│  └─ src/
+│     ├─ index.js          # Hono app + routes
+│     ├─ llm.js            # choose provider
+│     └─ whisper.js        # Cloudflare AI helper
+└─ frontend/
+   ├─ vite.config.js
+   ├─ tailwind.config.js
+   ├─ package.json
+   └─ src/
+      ├─ main.jsx
+      ├─ pages/
+      │   ├─ Home.jsx
+      │   ├─ Interview.jsx
+      │   ├─ QuestionBank.jsx
+      │   └─ Settings.jsx
+      └─ components/
+         ├─ Recorder.jsx
+         └─ ChatBubble.jsx

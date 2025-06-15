@@ -1,0 +1,14 @@
+-- Sessions and Q/A history
+CREATE TABLE IF NOT EXISTS sessions (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS interactions (
+  id         INTEGER PRIMARY KEY AUTOINCREMENT,
+  session_id INTEGER NOT NULL REFERENCES sessions(id) ON DELETE CASCADE,
+  question   TEXT NOT NULL,
+  answer     TEXT,
+  feedback   TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

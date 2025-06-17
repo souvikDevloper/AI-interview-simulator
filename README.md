@@ -100,7 +100,7 @@ Edit
 
 ## ⚡ Quick-start
 
-```bash
+
 # clone & install
 git clone https://github.com/souvikDevloper/AI-interview-simulator.git
 cd AI-interview-simulator
@@ -120,9 +120,9 @@ npm run dev                          # http://localhost:5173
 Note: Vite dev server proxies /api → 127.0.0.1:8787 (see vite.config.js).
 
 📦 Production deployment (one-liner)
-bash
-Copy
-Edit
+
+
+
 wrangler deploy --env production
 Publishes both the Worker and static assets to CF Pages. Branch previews are automatic via GitHub Actions.
 
@@ -133,9 +133,9 @@ OPENAI_API_KEY	optional	fallback to OpenAI
 VITE_API_BASE	Frontend build	custom API URL (leave blank for same origin)
 
 🗄 Database schema
-sql
-Copy
-Edit
+
+
+
 -- sessions = one per interview run
 CREATE TABLE sessions (
   id         INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -153,9 +153,9 @@ CREATE TABLE interactions (
 );
 Export command:
 
-bash
-Copy
-Edit
+
+
+
 wrangler d1 export interview_db --output dump.sqlite
 🌱 Roadmap
  OAuth2 login (GitHub, Google) → user-scoped sessions
@@ -195,9 +195,9 @@ Add the three demo GIFs/screenshots in docs/ (or remove those lines if you prefe
 
 Commit & push on your feat/react-js-rewrite branch:
 
-bash
-Copy
-Edit
+
+
+
 git add README.md docs
 git commit -m "docs: polished recruiter-grade README"
 git push
